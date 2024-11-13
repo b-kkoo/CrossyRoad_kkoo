@@ -32,16 +32,27 @@ public class PlayerController : MonoBehaviour, IHit
 
         if (context.performed)
         {
-            if(input.magnitude == 0f)
+            if (input.magnitude == 0f)
             {
-                Moving(transform.position + moveValue);
                 Rotate(moveValue);
-                moveValue = Vector3.zero;
+                CheckIfCanMove(context);
             }
             else
             {
                 moveValue = input * moveDistance;
             }
+        }
+    }
+
+    void CheckIfCanMove(InputAction.CallbackContext context) //앞에 장애물이 있는지 체크 후 없을 시에만 이동
+    {
+        Physics.Raycast(this.transform.position, -chick.transform.up, out RaycastHit hit, colliderDistCheck);
+        Debug.DrawRay(this.transform.position, -chick.transform.up * colliderDistCheck, Color.red, 2);
+
+        if (hit.collider == null || (hit.collider != null && hit.collider.tag != "collider"))
+        {
+            Moving(transform.position + moveValue);
+            moveValue = Vector3.zero;
         }
     }
 
