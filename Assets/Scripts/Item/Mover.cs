@@ -8,6 +8,9 @@ public class Mover : MonoBehaviour
     public bool hitBoxOnTrigger = false;
     public GameObject moverObject = null;
 
+    public bool fallIntoWaterOnTrigger = false;
+    public bool onLog = false;
+
     void Update()
     {
         transform.Translate(speed * Time.deltaTime, 0, 0);
@@ -20,11 +23,20 @@ public class Mover : MonoBehaviour
             if (parentOnTrigger)
             {
                 other.transform.parent = this.transform;
+                onLog = true;
             }
 
             if (hitBoxOnTrigger)
             {
                 other.GetComponent<IHit>().GetHit();
+            }
+
+            if (fallIntoWaterOnTrigger)
+            {
+                if (!onLog)
+                {
+                    other.GetComponent<IHit>().GetHit();
+                }
             }
         }
     }
@@ -36,6 +48,7 @@ public class Mover : MonoBehaviour
             if (parentOnTrigger)
             {
                 other.transform.parent = null;
+                onLog = false;
             }
         }
     }
