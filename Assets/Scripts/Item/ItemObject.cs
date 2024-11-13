@@ -7,11 +7,13 @@ public class ItemObject : MonoBehaviour
     public int id;
     public GameObject prefab;
 
+    private PoolManager poolManager;
+
     private void Update()
     {
         if (transform.position.x < -25f || transform.position.x > 25f)
         {
-            Manager.instance.ReturnObject(gameObject, id);
+            Manager.instance.PoolManager.ReturnObject(gameObject, id);
         }
     }
 }
