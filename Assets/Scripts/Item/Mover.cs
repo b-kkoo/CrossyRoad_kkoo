@@ -26,7 +26,6 @@ public class Mover : MonoBehaviour
             {
                 other.GetComponent<IHit>().GetHit();
             }
-
         }
     }
 
