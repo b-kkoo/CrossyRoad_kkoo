@@ -40,7 +40,7 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
             ""bindings"": [
                 {
                     ""name"": ""3D Vector"",
-                    ""id"": ""e588099c-9495-40a3-9377-2f9c2770e502"",
+                    ""id"": ""a392b7d0-10a5-445e-84f1-a4d816e92c09"",
                     ""path"": ""3DVector(mode=2)"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -51,7 +51,7 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""left"",
-                    ""id"": ""1e200f6f-3bab-4be2-a50b-b8d482c4fcc7"",
+                    ""id"": ""f31aa4eb-c4df-4b05-92e3-36df1ed01c04"",
                     ""path"": ""<Keyboard>/leftArrow"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -62,7 +62,7 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""right"",
-                    ""id"": ""3383035b-40fb-47e9-a1da-3e578c8ec163"",
+                    ""id"": ""2dc3ffd3-b1aa-4a30-9ad9-32d741608dc4"",
                     ""path"": ""<Keyboard>/rightArrow"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -73,8 +73,19 @@ public partial class @PlayerInputs: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": ""forward"",
-                    ""id"": ""637ed72f-222a-4cd6-8c17-c33afaa7995d"",
+                    ""id"": ""e64158ee-e15b-4597-845b-5685ce9dced9"",
                     ""path"": ""<Keyboard>/upArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Move"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""backward"",
+                    ""id"": ""7b435b63-e83d-4677-82a6-5abc165361fa"",
+                    ""path"": ""<Keyboard>/downArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
