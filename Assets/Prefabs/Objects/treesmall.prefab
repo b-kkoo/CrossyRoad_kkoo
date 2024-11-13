@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2316788}
   - component: {fileID: 6525014}
   - component: {fileID: 3369736084190353806}
+  - component: {fileID: 7016137353575632693}
   m_Layer: 0
   m_Name: treesmall
   m_TagString: collider
@@ -120,3 +121,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 25
   prefab: {fileID: 119080}
+--- !u!114 &7016137353575632693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 119080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a176e81ea36ae4fbd22b9b9a7d966b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

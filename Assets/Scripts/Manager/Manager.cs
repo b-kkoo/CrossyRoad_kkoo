@@ -9,7 +9,7 @@ public class Manager : MonoBehaviour
     public LevelGenerator levelGenerator = null;
 
     private int currentCoins = 0;
-    private int currentDistance = 0;
+    public int currentDistance = 0;
     private bool canPlay = false;
     private AudioSource effect;
     private AudioClip clip = null;

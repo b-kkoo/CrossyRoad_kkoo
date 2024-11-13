@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2324382}
   - component: {fileID: 6521336}
   - component: {fileID: 5199948153739786685}
+  - component: {fileID: 9192880841808340209}
   m_Layer: 0
   m_Name: treemedium
   m_TagString: collider
@@ -120,3 +121,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 24
   prefab: {fileID: 104532}
+--- !u!114 &9192880841808340209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104532}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a176e81ea36ae4fbd22b9b9a7d966b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

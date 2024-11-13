@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 6568538}
   - component: {fileID: 11401586}
   - component: {fileID: -556547981627704172}
+  - component: {fileID: 5549871753177031422}
   m_Layer: 0
   m_Name: logShort
   m_TagString: Untagged
@@ -170,3 +171,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 12
   prefab: {fileID: 190844}
+--- !u!114 &5549871753177031422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a176e81ea36ae4fbd22b9b9a7d966b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

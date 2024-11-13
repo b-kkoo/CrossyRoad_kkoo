@@ -510,6 +510,7 @@ GameObject:
   - component: {fileID: 6517692}
   - component: {fileID: 11452100}
   - component: {fileID: 3485985554551817171}
+  - component: {fileID: -3063462310834495600}
   m_Layer: 0
   m_Name: traincar4
   m_TagString: train
@@ -590,3 +591,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 19
   prefab: {fileID: 179956}
+--- !u!114 &-3063462310834495600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8a176e81ea36ae4fbd22b9b9a7d966b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
