@@ -52,7 +52,14 @@ public class PlayerController : MonoBehaviour, IHit
 
     void Rotate(Vector3 pos)
     {
-        chick.rotation = Quaternion.Euler(270, pos.x * 90, 0);
+        if (pos.z < 0f) //후방이동시 뒤돌아보기 추가
+        {
+            chick.rotation = Quaternion.Euler(270, pos.z * 180, 0);
+        }
+        else //후방이동 아닐 시 기존 코드 실행
+        {
+            chick.rotation = Quaternion.Euler(270, pos.x * 90, 0);
+        }
     }
 
     void SetMoveForwardState()
