@@ -71,7 +71,7 @@ public class Manager : MonoBehaviour
     {
         currentDistance += 1;
         distance?.Invoke(currentDistance);
-        //levelGenerator.RandomGenerator();
+        levelGenerator.RandomGenerator();
     }
 
     public void GameOver()
