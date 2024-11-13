@@ -8,8 +8,9 @@ public class Mover : MonoBehaviour
     public bool hitBoxOnTrigger = false;
     public GameObject moverObject = null;
 
-    public bool fallIntoWaterOnTrigger = false;
-    public bool onLog = false;
+    //물에 빠졌을 시 게임오버되는 기능을 추가해 보았지만 통나무 위에서도 게임 오버되는 문제로 인해 보류
+    //public bool fallIntoWaterOnTrigger = false;
+    //public bool onLog = false;
 
     void Update()
     {
@@ -23,7 +24,7 @@ public class Mover : MonoBehaviour
             if (parentOnTrigger)
             {
                 other.transform.parent = this.transform;
-                onLog = true;
+                //onLog = true;
             }
 
             if (hitBoxOnTrigger)
@@ -31,13 +32,13 @@ public class Mover : MonoBehaviour
                 other.GetComponent<IHit>().GetHit();
             }
 
-            if (fallIntoWaterOnTrigger)
-            {
-                if (!onLog)
-                {
-                    other.GetComponent<IHit>().GetHit();
-                }
-            }
+            //if (fallIntoWaterOnTrigger)
+            //{
+            //    if (!onLog)
+            //    {
+            //        other.GetComponent<IHit>().GetHit();
+            //    }
+            //}
         }
     }
 
@@ -48,7 +49,7 @@ public class Mover : MonoBehaviour
             if (parentOnTrigger)
             {
                 other.transform.parent = null;
-                onLog = false;
+                //onLog = false;
             }
         }
     }
